@@ -1,0 +1,729 @@
+<!-- Slide 8: Audit Action Points -->
+        <div class="slide" id="slide8">
+            <div class="slide-number">8</div>
+            <h2>Actionable Audit Intelligence</h2>
+            <p style="text-align: center; font-size: 1.3em; margin-bottom: 30px;">
+                TathminiAI doesn't just flag issues—it guides your investigation
+            </p>
+
+            <div style="background: #f8f9fa; padding: 30px; border-radius: 15px;">
+                <h3 style="color: #e74c3c;">For the 923% Contracted Services Overspending:</h3>
+                <div style="background: white; padding: 25px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #e74c3c;">
+                    <h4>Recommended Action Points:</h4>
+                    <ul style="margin-top: 15px;">
+                        <li><strong>Verify timing:</strong> Is this a missed or delayed debit entry?</li>
+                        <li><strong>Check posting errors:</strong> Was the expense posted to the wrong account?</li>
+                        <li><strong>Compare periods:</strong> Is this an unusual change from prior periods?</li>
+                        <li><strong>Investigate systems:</strong> Were expenses accrued but not paid due to budget constraints?</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: #e8f5e8; padding: 25px; border-radius: 10px; margin-top: 30px;">
+                <h3 style="color: #27ae60;">The TathminiAI Advantage:</h3>
+                <p style="font-size: 1.3em;"><strong>From Data Upload to Investigation Roadmap in Seconds</strong></p>
+                <p>Traditional methods: Hours of manual analysis → TathminiAI: Instant prioritized action plan</p>
+            </div>
+        </div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TathminiAI Presentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .presentation {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .slide {
+            background: white;
+            border-radius: 15px;
+            padding: 60px;
+            margin: 30px 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 0.8s ease-out forwards;
+        }
+        
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .slide:nth-child(2) { animation-delay: 0.2s; }
+        .slide:nth-child(3) { animation-delay: 0.4s; }
+        .slide:nth-child(4) { animation-delay: 0.6s; }
+        
+        h1 {
+            font-size: 3.5em;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            color: #34495e;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.8em;
+            color: #2980b9;
+            margin: 25px 0 15px 0;
+        }
+        
+        p, li {
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 1.4em;
+            color: #7f8c8d;
+            text-align: center;
+            font-style: italic;
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        
+        .problem-box {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .solution-box {
+            background: linear-gradient(135deg, #27ae60, #229954);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #5dade2, #3498db);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .demo-container {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 5px solid #3498db;
+        }
+        
+        .anomaly-highlight {
+            background: linear-gradient(135deg, #dc7633, #d68910);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        
+        .success-metric {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .benefit-item {
+            background: linear-gradient(135deg, #8e44ad, #7d3c98);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #fd79a8, #fdcb6e);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .contact-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .screenshot-placeholder {
+            background: #ecf0f1;
+            border: 3px dashed #bdc3c7;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        ul {
+            padding-left: 30px;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .slide-number {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+        
+        .nav-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            margin: 0 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Title -->
+        <div class="slide" id="slide1">
+            <div class="slide-number">1</div>
+            <h1>TathminiAI</h1>
+            <p class="subtitle">Intelligent Audit Planning and Evaluation Tool</p>
+            <div class="solution-box">
+                <h3>Transforming Financial Data into Actionable Audit Insights</h3>
+                <p>Leveraging Artificial Intelligence for faster, smarter, and more transparent audit planning</p>
+            </div>
+            <p style="text-align: center; margin-top: 40px; font-size: 1.1em; color: #7f8c8d;">
+                A flagship solution from IwazoLab
+            </p>
+        </div>
+
+        <!-- Slide 2: Kenya Audit Pain Points -->
+        <div class="slide" id="slide2">
+            <div class="slide-number">2</div>
+            <h2>Kenya Audit Reality: 5 Critical Pain Points</h2>
+            <p style="text-align: center; font-size: 1.3em; margin-bottom: 30px; font-style: italic;">
+                Challenges facing mid-size audit firms in Kenya today
+            </p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="problem-box" style="background: linear-gradient(135deg, #8b4513, #a0522d);">
+                    <h3>1. ⏰ Manual Data Processing</h3>
+                    <p><strong>Reality:</strong> 60-80% of audit time spent on manual data entry and Excel analysis</p>
+                    <p><em>"Weeks to identify what should take minutes"</em></p>
+                </div>
+
+                <div class="problem-box" style="background: linear-gradient(135deg, #2c3e50, #34495e);">
+                    <h3>2. 👥 Talent Shortage</h3>
+                    <p><strong>Challenge:</strong> Difficulty finding qualified staff, leading to overworked teams</p>
+                    <p><em>Senior auditors doing junior tasks</em></p>
+                </div>
+
+                <div class="problem-box" style="background: linear-gradient(135deg, #7f8c8d, #95a5a6);">
+                    <h3>3. 🎯 Risk Detection Delays</h3>
+                    <p><strong>Issue:</strong> Anomalies discovered during fieldwork, not planning</p>
+                    <p><em>Reactive rather than proactive approach</em></p>
+                </div>
+
+                <div class="problem-box" style="background: linear-gradient(135deg, #5d6d7e, #566573);">
+                    <h3>4. 📊 Client Expectations</h3>
+                    <p><strong>Pressure:</strong> Faster turnaround times with same quality standards</p>
+                    <p><em>Doing more with less resources</em></p>
+                </div>
+            </div>
+
+            <div class="problem-box" style="background: linear-gradient(135deg, #8b4513, #a0522d); margin-top: 20px;">
+                <h3>5. 💰 Competitive Pricing Pressure</h3>
+                <p><strong>Reality:</strong> Fee compression while regulatory compliance costs increase</p>
+                <p><em>Squeezed margins, need for efficiency gains</em></p>
+            </div>
+
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-top: 30px; text-align: center;">
+                <h3 style="color: #8b4513;">The Result:</h3>
+                <p style="font-size: 1.4em; font-weight: bold;">"Working harder, not smarter - with limited scalability"</p>
+            </div>
+        </div>
+
+        <!-- Slide 3: TathminiAI Solutions -->
+        <div class="slide" id="slide3">
+            <div class="slide-number">3</div>
+            <h2>How TathminiAI Solves Kenya's Audit Challenges</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 30px;">
+                <div class="solution-box" style="background: linear-gradient(135deg, #27ae60, #2ecc71);">
+                    <h3>🚀 Manual → Automated</h3>
+                    <p><strong>Problem:</strong> 60-80% time on manual processing</p>
+                    <p><strong>Solution:</strong> Upload → Analysis in seconds</p>
+                    <p><em>80% time reduction, reallocate senior staff to high-value tasks</em></p>
+                </div>
+
+                <div class="solution-box" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                    <h3>👥 Talent Amplification</h3>
+                    <p><strong>Problem:</strong> Qualified staff shortage</p>
+                    <p><strong>Solution:</strong> AI does junior analysis work</p>
+                    <p><em>Junior staff can handle complex analysis with TathminiAI guidance</em></p>
+                </div>
+
+                <div class="solution-box" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+                    <h3>🎯 Proactive Risk Detection</h3>
+                    <p><strong>Problem:</strong> Issues found during fieldwork</p>
+                    <p><strong>Solution:</strong> Anomalies flagged at planning stage</p>
+                    <p><em>Plan investigations around actual risks, not assumptions</em></p>
+                </div>
+
+                <div class="solution-box" style="background: linear-gradient(135deg, #e67e22, #d35400);">
+                    <h3>📊 Client Value Addition</h3>
+                    <p><strong>Problem:</strong> Pressure for faster delivery</p>
+                    <p><strong>Solution:</strong> Instant insights + visual reports</p>
+                    <p><em>Impress clients with speed and depth of analysis</em></p>
+                </div>
+            </div>
+
+            <div class="solution-box" style="background: linear-gradient(135deg, #f39c12, #e67e22); margin-top: 25px;">
+                <h3>💰 Competitive Advantage</h3>
+                <p><strong>Problem:</strong> Fee compression & margin pressure</p>
+                <p><strong>Solution:</strong> Handle more clients with same resources</p>
+                <p><em>Scale operations without proportional staff increases</em></p>
+            </div>
+
+            <div style="background: #e8f5e8; padding: 25px; border-radius: 10px; margin-top: 30px; text-align: center;">
+                <h3 style="color: #27ae60;">The TathminiAI Promise:</h3>
+                <p style="font-size: 1.4em; font-weight: bold;">"Transform your biggest challenges into competitive advantages"</p>
+            </div>
+        </div>
+
+        <!-- Slide 4: Kenya Use Cases -->
+        <div class="slide" id="slide4">
+            <div class="slide-number">4</div>
+            <h2>TathminiAI Use Cases: Kenya Context</h2>
+            <p style="text-align: center; font-size: 1.3em; margin-bottom: 30px; font-style: italic;">
+                Real scenarios from Kenyan audit practice
+            </p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                <div class="feature-card" style="background: linear-gradient(135deg, #8b4513, #a0522d); text-align: left;">
+                    <h3>🏥 SACCO Audits</h3>
+                    <p><strong>Challenge:</strong> Multiple branches, complex member transactions</p>
+                    <p><strong>TathminiAI Solution:</strong></p>
+                    <ul style="text-align: left; margin-top: 10px;">
+                        <li>Branch-level anomaly detection</li>
+                        <li>Member loan portfolio analysis</li>
+                        <li>Regulatory compliance checks</li>
+                    </ul>
+                    <p><em>"Instantly spot irregular lending patterns across 20+ branches"</em></p>
+                </div>
+
+                <div class="feature-card" style="background: linear-gradient(135deg, #27ae60, #229954); text-align: left;">
+                    <h3>🏛️ NGO Donor Audits</h3>
+                    <p><strong>Challenge:</strong> Multiple funding sources, grant compliance</p>
+                    <p><strong>TathminiAI Solution:</strong></p>
+                    <ul style="text-align: left; margin-top: 10px;">
+                        <li>Project-wise expenditure tracking</li>
+                        <li>Donor restriction compliance</li>
+                        <li>Administrative cost ratios</li>
+                    </ul>
+                    <p><em>"Verify 95% compliance before donor visits"</em></p>
+                </div>
+
+                <div class="feature-card" style="background: linear-gradient(135deg, #5dade2, #3498db); text-align: left;">
+                    <h3>🏭 Manufacturing Audits</h3>
+                    <p><strong>Challenge:</strong> Complex cost structures, inventory variations</p>
+                    <p><strong>TathminiAI Solution:</strong></p>
+                    <ul style="text-align: left; margin-top: 10px;">
+                        <li>Cost center variance analysis</li>
+                        <li>Inventory reconciliation alerts</li>
+                        <li>Production efficiency metrics</li>
+                    </ul>
+                    <p><em>"Flag cost overruns before month-end"</em></p>
+                </div>
+
+                <div class="feature-card" style="background: linear-gradient(135deg, #8e44ad, #7d3c98); text-align: left;">
+                    <h3>🏪 Retail Chain Audits</h3>
+                    <p><strong>Challenge:</strong> Multiple locations, cash handling issues</p>
+                    <p><strong>TathminiAI Solution:</strong></p>
+                    <ul style="text-align: left; margin-top: 10px;">
+                        <li>Store-by-store performance analysis</li>
+                        <li>Cash flow irregularities detection</li>
+                        <li>Inventory shrinkage patterns</li>
+                    </ul>
+                    <p><em>"Detect potential fraud patterns across outlets"</em></p>
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-top: 30px;">
+                <h3 style="color: #2c3e50; text-align: center;">Common Thread:</h3>
+                <p style="font-size: 1.3em; text-align: center; font-weight: bold;">
+                    "From weeks of manual analysis to minutes of intelligent insights"
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 5: Live Demo Screenshots -->
+        <div class="slide" id="slide5">
+            <div class="slide-number">5</div>
+            <h2>TathminiAI in Action</h2>
+            <p style="font-size: 1.4em; text-align: center; margin-bottom: 30px;">
+                <em>Simple Upload → Instant Intelligence</em>
+            </p>
+            
+            <div class="demo-container">
+                <h3>Step 1: Upload Your Data</h3>
+                <div class="screenshot-placeholder">
+                    <p><strong>[Screenshot 1: Upload Interface]</strong></p>
+                    <p>Drag & Drop Interface - Supports XLSX, XLS, CSV</p>
+                    <p>"Drag & drop your financial data file or click to select file"</p>
+                </div>
+            </div>
+
+            <div class="demo-container">
+                <h3>Step 2: Instant Results & Critical Findings</h3>
+                <div class="screenshot-placeholder">
+                    <p><strong>[Screenshot 2: Analysis Results]</strong></p>
+                    <p>Real findings from client data shown below ⬇️</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Real Results -->
+        <div class="slide" id="slide6">
+            <div class="slide-number">6</div>
+            <h2>Real Client Results</h2>
+            <p style="text-align: center; font-size: 1.3em; margin-bottom: 30px;">
+                <em>Actual findings from recent client analysis</em>
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div class="anomaly-highlight">
+                    <h3>🚨 CRITICAL ANOMALY DETECTED</h3>
+                    <p><strong>CONTRACTED SERVICES</strong></p>
+                    <p style="font-size: 2em;">923.14% OVERSPENDING</p>
+                    <p>Ksh. 1.2M Budget Variance</p>
+                    <p style="fontSize: 1.1em;">Total Credit: Ksh. 134,291 | Total Debit: Ksh. 1,373,980</p>
+                </div>
+
+                <div class="anomaly-highlight">
+                    <h3>⚠️ STAFF ADVANCES ISSUE</h3>
+                    <p><strong>STAFF ADVANCES KENYA</strong></p>
+                    <p style="font-size: 2em;">82.35% VARIANCE</p>
+                    <p>Ksh. 2M Budget Impact</p>
+                    <p style="fontSize: 1.1em;">Total Credit: Ksh. 2,427,900 | Total Debit: Ksh. 4,427,280</p>
+                </div>
+            </div>
+
+            <div class="success-metric" style="margin-top: 30px;">
+                <h3>📊 FINANCIAL OVERVIEW</h3>
+                <p><strong>Profit & Loss Summary: Ksh. 3.1K</strong></p>
+                <p>Revenue: Ksh. 6.2B | Expenses: Ksh. 6.2B</p>
+                <p><em>Clean executive summary alongside detailed audit flags</em></p>
+            </div>
+
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-top: 30px;">
+                <h3 style="color: #2c3e50;">Key Question:</h3>
+                <p style="font-size: 1.4em; font-style: italic; color: #e74c3c;">
+                    "How long would it take your team to manually identify these critical variances across hundreds of accounts?"
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 7: Key Features -->
+        <div class="slide" id="slide7">
+            <div class="slide-number">7</div>
+            <h2>Key Features</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🔍 Automated Anomaly Detection</h3>
+                    <p>Identifies suspicious trends like overspending or unexpected variances across cost centers, accounts, or branches</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📊 Dynamic Financial Dashboards</h3>
+                    <p>Clear summaries of revenue, expenses, and anomalies with color-coded indicators</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📤 Drag-and-Drop Upload</h3>
+                    <p>Easy-to-use interface supports XLSX, XLS, and CSV uploads</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔎 Account-Level Drill Down</h3>
+                    <p>Select specific accounts to analyze credit/debit patterns and trends</p>
+                </div>
+            </div>
+
+            <div class="solution-box" style="margin-top: 30px;">
+                <h3>🚀 Coming Soon: AI-Powered Learning Engine</h3>
+                <p>Learns from previous audits to improve risk detection and benchmarking over time</p>
+            </div>
+        </div>
+
+        <!-- Slide 9: Who Is It For -->
+        <div class="slide" id="slide9">
+            <div class="slide-number">9</div>
+            <h2>Who Benefits from TathminiAI?</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🏢 Audit Firms</h3>
+                    <p>Speed up planning and detection phases</p>
+                    <p><em>Reduce planning time by 80%</em></p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🏛️ Internal Audit Teams</h3>
+                    <p>NGOs, Corporates, Public Institutions</p>
+                    <p><em>Enhance efficiency and reduce risk</em></p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>💼 Finance Managers</h3>
+                    <p>Monitor financial health and compliance instantly</p>
+                    <p><em>Real-time oversight capabilities</em></p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🌍 Donor-Funded Projects</h3>
+                    <p>Improve accountability and transparency for stakeholders</p>
+                    <p><em>Build trust through data transparency</em></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Benefits -->
+        <div class="slide" id="slide10">
+            <div class="slide-number">10</div>
+            <h2>Proven Benefits</h2>
+            
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <h3>⏰ Saves Time</h3>
+                    <p><strong>80% reduction</strong> in manual data review time</p>
+                    <p>Hours → Seconds</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h3>🎯 Improves Accuracy</h3>
+                    <p><strong>Minimizes human error</strong> in anomaly detection</p>
+                    <p>923% variances caught instantly</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h3>🔍 Strengthens Transparency</h3>
+                    <p><strong>Auditable trail</strong> with clear metrics</p>
+                    <p>Visual alerts & documentation</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h3>📋 Enhances Planning</h3>
+                    <p><strong>Proactive</strong> vs reactive approach</p>
+                    <p>Risk-based audit focus</p>
+                </div>
+            </div>
+
+            <div class="success-metric" style="margin-top: 40px;">
+                <h3>🎯 Bottom Line Impact</h3>
+                <p><strong>Transform audit planning from reactive to proactive</strong></p>
+                <p>Catch critical issues upfront, plan investigations accordingly</p>
+            </div>
+        </div>
+
+        <!-- Slide 11: Next Steps & Contact -->
+        <div class="slide" id="slide11">
+            <div class="slide-number">11</div>
+            <h2>Next Steps</h2>
+            
+            <div class="cta-section">
+                <h3 style="margin-bottom: 30px;">Ready to Transform Your Audit Process?</h3>
+                
+                <div style="background: rgba(255,255,255,0.2); padding: 30px; border-radius: 15px; margin: 30px 0;">
+                    <h4>Two Ways to Experience TathminiAI:</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;">
+                        <div style="background: rgba(255,255,255,0.3); padding: 25px; border-radius: 10px;">
+                            <h4>📅 Live Demo</h4>
+                            <p>Schedule a personalized demonstration with your team</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.3); padding: 25px; border-radius: 10px;">
+                            <h4>📊 Test Run</h4>
+                            <p>Upload your Trial Balance for immediate analysis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>📧 Email</h4>
+                        <p>info@iwazolab.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>📱 Phone</h4>
+                        <p>+254 710 469 000</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>🌐 Website</h4>
+                        <p>Iwazolab.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>💼 LinkedIn</h4>
+                        <p>IwazoLab – Data Solutions for Africa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; font-size: 1.4em; color: #2c3e50;">
+                <strong>Thank you for your time!</strong><br>
+                <em>Questions & Discussion</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" onclick="previousSlide()">← Previous</button>
+        <button class="nav-btn" onclick="nextSlide()">Next →</button>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 11;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach(slide => slide.style.display = 'none');
+            document.getElementById(`slide${n}`).style.display = 'flex';
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function previousSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        // Initialize
+        showSlide(1);
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+
+        // Add click navigation to slides
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.nav-btn')) return;
+            
+            const rect = window.innerWidth;
+            if (e.clientX > rect / 2) {
+                nextSlide();
+            } else {
+                previousSlide();
+            }
+        });
+    </script>
+</body>
+</html>
